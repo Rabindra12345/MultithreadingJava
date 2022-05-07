@@ -1,0 +1,29 @@
+package com.rabindra.iterator;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class IteratorPractice {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		// Make a collection
+	    ArrayList<String> cars = new ArrayList<String>();
+	    cars.add("Volvo");
+	    cars.add("BMW");
+	    cars.add("Ford");
+	    cars.add("Mazda");
+
+	    // Get the iterator
+	    Iterator<String> it = cars.iterator();
+
+	    // Print the first item
+	    while(it.hasNext()) {
+	    	System.out.println(it.next());
+	    	Thread.sleep(2000);
+	    	
+	    }
+	  }
+}
+
+
